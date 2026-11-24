@@ -1,0 +1,37 @@
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/analyze",
+      "dest": "main.py"
+    },
+    {
+      "src": "/quiz",
+      "dest": "main.py"
+    },
+    {
+      "src": "/courses",
+      "dest": "main.py"
+    },
+    {
+      "src": "/health",
+      "dest": "main.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

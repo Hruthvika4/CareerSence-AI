@@ -1,0 +1,5 @@
+{
+  "name": "CareerSense AI",
+  "description": "An AI-powered career guidance platform that analyzes resumes, identifies skill gaps, provides personalized assessments, and recommends learning paths using Gemini.",
+  "requestFramePermissions": []
+}
